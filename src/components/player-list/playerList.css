@@ -1,0 +1,100 @@
+.content-block {
+    margin-left: 100px;
+    margin-top: 20px;
+    /*position: relative;*/
+    width: 100%;
+    /*float: right;*/
+}
+
+.content-block .player-list-block {
+    height: 450px;
+    margin-left: 150px;
+    text-align: center;
+    width: 70%;
+    background-color: #202020;
+}
+
+.content-block .player-list-block h2 {
+    margin: 0 0 0 0;
+    border: solid;
+    padding: 10px;
+}
+
+.player-list-block .player-list {
+    background-color: #202020;
+    height: 100%;
+    overflow: auto;
+    text-align: center;
+    border-left: solid;
+    border-bottom: solid;
+}
+
+.player-list-block .player {
+    text-decoration: none;
+    border-bottom: solid;
+    padding: 10px;
+    text-align: left;
+}
+
+.player-list-block .player-name {
+
+}
+
+.player-list-block .player-status {
+
+}
+
+.player-list-block .player-rating {
+
+}
+
+.player-name, .player-status, .player-rating, .player-play-button, .player-data {
+    display: inline-block;
+    overflow: hidden;
+    margin-left: 30px;
+    width: 100px;
+    text-align: center;
+}
+
+.player-play-button {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 2px 21px;
+    border: 1px solid #a12727;
+    border-radius: 8px;
+    background: #ff4a4a;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff4a4a), to(#992727));
+    background: -moz-linear-gradient(top, #ff4a4a, #992727);
+    background: linear-gradient(to bottom, #ff4a4a, #992727);
+    font: normal normal bold 17px arial;
+    color: #ffffff;
+    text-decoration: none;
+}
+.player-play-button:hover,
+.player-play-button:focus {
+    cursor: pointer;
+    background: #ff5959;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff5959), to(#b62f2f));
+    background: -moz-linear-gradient(top, #ff5959, #b62f2f);
+    background: linear-gradient(to bottom, #ff5959, #b62f2f);
+    color: #ffffff;
+    text-decoration: none;
+}
+.player-play-button:active {
+    background: #982727;
+    background: -webkit-gradient(linear, left top, left bottom, from(#982727), to(#982727));
+    background: -moz-linear-gradient(top, #982727, #982727);
+    background: linear-gradient(to bottom, #982727, #982727);
+}
+
+.blocks-names {
+    text-align: left;
+    border-bottom: solid;
+    border-right: solid;
+    border-left: solid;
+}
+
+.blocks-names button {
+    margin: 10px 0 10px 35px;
+}
