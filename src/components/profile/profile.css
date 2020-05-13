@@ -1,0 +1,84 @@
+.content-block {
+    margin-left: 100px;
+    margin-top: 20px;
+    position: absolute;
+}
+
+.profile-block {
+    display: inline-block;
+    height: 500px;
+    margin-left: 150px;
+
+    width: 50%;
+    background-color: #202020;
+}
+
+.profile-block .profile-content {
+    text-align: left;
+    margin: 10px;
+}
+
+.profile-block .player-image {
+    display: inline-block;
+    height: 120px;
+    width: 120px;
+    background-image: url("https://arcanashop.ru/avatar/00/27/35702059.jpeg");
+    border-radius: 50%;
+    background-size: 120px 120px;
+    margin-top: 20px;
+    margin-left: 20px;
+    float: left;
+}
+
+.profile-block .short-inf {
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 50px;
+}
+
+.profile-block .short-inf {
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 50px;
+}
+
+.friend-list-block {
+    position: absolute;
+    display: inline-block;
+    background-color: #202020;
+    width: 20%;
+    height: 100%;
+    /*overflow: auto;*/
+    margin-left: 40px;
+    text-align: center;
+    border-bottom: solid;
+}
+
+.friend-list-block > div {
+    overflow: auto;
+    height: 91%;
+}
+
+.friend-list-block h4 {
+    border: solid;
+    padding: 10px;
+    margin: 0;
+}
+
+.friend-list-block .friend-player {
+    text-decoration: none;
+    border-bottom: solid;
+    border-left: solid;;
+    padding: 10px;
+    text-align: left;
+}
+
+.friend-list-block .friend-player-name {
+    display: inline-block;
+    width: 100px;
+    overflow: hidden;
+}
+
+.friend-list-block .friend-player-status {
+    margin-left: 30px;
+}

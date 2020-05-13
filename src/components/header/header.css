@@ -1,0 +1,37 @@
+.main-nav {
+    text-align: center;
+    text-decoration: none;
+    position: fixed;
+    height: 100%;
+    background-color: #202020;
+    width: 100px;
+    float: left;
+}
+
+.main-nav .logo {
+    display: inline-block;
+    background-image: url("../../images/sea-battle-logo.png");
+    background-size: 70px 70px;
+    height: 70px;
+    width: 70px;
+}
+
+.main-nav .sidebar-item {
+    text-align: center;
+    height: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.main-nav .sidebar-item:hover {
+    background-color: #111111;
+}
+
+.nav-link {
+
+    text-decoration: none;
+    padding: 2px;
+    color: #ffffff;
+}
+
+
