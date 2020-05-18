@@ -1,12 +1,15 @@
 import React from "react";
 import './playerList.css';
 
+import {Link, Route, Switch, NavLink} from 'react-router-dom';
+import PlayerProfile from "../playerProfile";
+
 const playerFriendsNames = [];
 
 for (let i = 0; i < 100; ++i) {
     playerFriendsNames.push({name: `Player${i}`,
         rating: `00${i}`,
-        online: i % 4 == 0,
+        online: i % 4 === 0,
 
         additionInf: "Some Data"});
 }
@@ -14,10 +17,28 @@ for (let i = 0; i < 100; ++i) {
 export default class PlayerList extends React.Component {
     constructor() {
         super();
+        this.state = {
+            playerList: []
+        }
+    }
+
+    componentDidMount() {
+        fetch('/Users')
+            .then(resp => {
+                console.log(resp);
+                return resp.json()
+            })
+            .then(body => this.setState(
+                {playerList: body
+                }))
+            .catch(e => alert("Something went wrong!"));
     }
 
     render() {
         return (
+
+
+
             <div className={"content-block"}>
                 <div className={"player-list-block"}>
                     <h2>Players List</h2>
@@ -33,15 +54,15 @@ export default class PlayerList extends React.Component {
                     </div>
 
                     <div className={"player-list"}>
-                        {playerFriendsNames.map((player) =>
+                        {this.state.playerList.map((player) =>
                             <div className={"player"}>
-                                <div className={"player-name"}>{player.name}</div>
-                                <span className={"player-rating"}>{player.rating}</span>
+                                <NavLink to={`/player-list/${player.id}`} className={"player-name"}>{player.data.username}</NavLink>
+                                <span className={"player-rating"}>{player.data.rating}</span>
                                 <span className={"player-status"} style=
-                                    {{color: player.online ? "green" : "red"}}>
-                                    {player.online ? "Online" : "Offline"}
+                                    {{color: "red"}}>
+                                    {"Offline"}
                                 </span>
-                                <span className={"player-data"}>{player.additionInf}</span>
+                                <span className={"player-data"}>{"Some Data"}</span>
                                 <button className={"player-play-button"} onClick=
                                     {()=>alert("This function will be added later")}>
                                     Play</button>

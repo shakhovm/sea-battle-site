@@ -9,16 +9,20 @@ import Form from "./components/form";
 import Register from "./components/register";
 
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import PlayerProfile from "./components/playerProfile";
+import SignInForm from "./components/sign-in";
 function App() {
   return (
       <BrowserRouter>
           <Header/>
             <Switch>
-                <Route path='/player-list' component={PlayerList} />
+                <Route exact path='/player-list' component={PlayerList} />
+
+                <Route exact path='/player-list/:id' component={PlayerProfile} />
                 <Route path='/my-profile' component={MyProfile} />
-                <Route path='/sign-in' component={Form} />
+                <Route path='/sign-in' component={SignInForm} />
                 <Route path='/sign-up' component={Register} />
-                <Route path='/' component={MainPage} />
+                <Route exact path='/' component={MainPage} />
             </Switch>
 
       </BrowserRouter>
