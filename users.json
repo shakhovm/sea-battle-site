@@ -1,0 +1,36 @@
+{
+  "Users": [
+    {
+      "id": 1,
+      "data": {
+        "username": "Shrek",
+        "additionalData": "Some information that will be added later",
+        "rating": 0,
+        "password": "0000",
+        "image": "https://arcanashop.ru/avatar/00/27/35702059.jpeg"
+      }
+    },
+    {
+      "data": {
+        "username": "Player1",
+        "password": "0000",
+        "email": "xxx@gmail.com",
+        "rating": 0,
+        "additionalData": "Some information that will be added later",
+        "image": "https://arcanashop.ru/avatar/00/27/35702059.jpeg"
+      },
+      "id": 2
+    },
+    {
+      "data": {
+        "username": "Player2",
+        "password": "0000",
+        "email": "xxx1@gmail.com",
+        "rating": 0,
+        "additionalData": "Some information that will be added later",
+        "image": "https://arcanashop.ru/avatar/00/27/35702059.jpeg"
+      },
+      "id": 3
+    }
+  ]
+}

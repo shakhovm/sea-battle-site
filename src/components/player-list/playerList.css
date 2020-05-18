@@ -54,6 +54,8 @@
     margin-left: 30px;
     width: 100px;
     text-align: center;
+    text-decoration: none;
+    color: white;
 }
 
 .player-play-button {

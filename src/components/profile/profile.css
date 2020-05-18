@@ -18,16 +18,24 @@
     margin: 10px;
 }
 
+#imageChooser {
+
+    display: none;
+
+}
+
 .profile-block .player-image {
     display: inline-block;
     height: 120px;
     width: 120px;
-    background-image: url("https://arcanashop.ru/avatar/00/27/35702059.jpeg");
+    /*background-image: url("https://arcanashop.ru/avatar/00/27/35702059.jpeg");*/
     border-radius: 50%;
     background-size: 120px 120px;
     margin-top: 20px;
     margin-left: 20px;
     float: left;
+    outline: none;
+    cursor: pointer;
 }
 
 .profile-block .short-inf {

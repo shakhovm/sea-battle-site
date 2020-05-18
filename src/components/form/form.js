@@ -1,30 +1,42 @@
 import React from "react";
 
 import './form.css';
+import CustomInput from "../cunstom-input";
+
+const mainElements = [
+    {
+        value: "username",
+        label: "Username",
+        type: "text"
+    },
+    {
+        value: "password",
+        label: "Password",
+        type: "password"
+    },
+];
+
 
 export default class Form extends React.Component {
     constructor() {
         super();
+        this.state = {
+            username: "",
+            password: "",
+            userId: 0
+        }
     }
 
     render() {
         return (
-            <div className={"form-container"}>
+            <form onSubmit={e => this.props.onSubmit(e)} className={"form-container"}>
                 <div className={"form-logo"}>
-
                 </div>
+                {this.props.content}
                 <div className={"form-element"}>
-                    <label htmlFor={"username"}>Username</label>
-                        <input type={"text"} name={"username"} placeholder={"username"}/>
+                    <input type="submit" className={"player-play-button"} value={this.props.buttonValue}/>
                 </div>
-                <div className={"form-element"}>
-                    <label htmlFor={"password"}>Password</label>
-                    <input type={"password"} name={"password"} placeholder={"password"}/>
-
-                </div>
-
-            <button className={"player-play-button"} onClick={()=>alert("Submit")}>SignIn</button>
-            </div>
+            </form>
         )
     }
 }
