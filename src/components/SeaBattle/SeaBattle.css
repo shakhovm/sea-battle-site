@@ -1,0 +1,49 @@
+.sea-battle {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 200px;
+
+    text-align: center;
+}
+
+.field {
+    display: inline-block;
+    margin-right: 100px;
+    margin-top: 20px;
+}
+
+.empty-cell {
+    background-color: white;
+}
+
+.ship-cell {
+    background-color: green;
+}
+
+.shot-cell {
+    background-color: blue;
+}
+
+.shot-ship {
+    background-color: red;
+}
+
+.enemy-ship-cell {
+    background-color: white;
+}
+
+.empty-cell, .ship-cell, .shot-cell, .shot-ship, .enemy-ship-cell {
+    display: inline-block;
+    border: solid black;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.sea-battle .play-button {
+    margin-left: 50px;
+    display: block;
+    width: 30%;
+    height: 50px;
+    margin-top: 5px;
+}

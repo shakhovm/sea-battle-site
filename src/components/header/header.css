@@ -11,7 +11,7 @@
 .main-nav .logo {
     display: inline-block;
     background-image: url("../../images/sea-battle-logo.png");
-    background-size: 70px 70px;
+    background-size: cover;
     height: 70px;
     width: 70px;
 }
@@ -28,10 +28,7 @@
 }
 
 .nav-link {
-
     text-decoration: none;
     padding: 2px;
     color: #ffffff;
 }
-
-

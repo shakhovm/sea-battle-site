@@ -1,21 +1,6 @@
 import React from "react";
 
 import './form.css';
-import CustomInput from "../cunstom-input";
-
-const mainElements = [
-    {
-        value: "username",
-        label: "Username",
-        type: "text"
-    },
-    {
-        value: "password",
-        label: "Password",
-        type: "password"
-    },
-];
-
 
 export default class Form extends React.Component {
     constructor() {

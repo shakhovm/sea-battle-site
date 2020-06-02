@@ -26,8 +26,7 @@
     width: 488px;
     height: 293px;
     background-image: url("https://i.pinimg.com/originals/53/c2/d6/53c2d6dc3efc123ba38b218e704fee89.jpg");
-    background-size: 488px 293px;
-
+    background-size: cover;
 }
 
 .main-page-text {

@@ -1,9 +1,7 @@
 .content-block {
     margin-left: 100px;
     margin-top: 20px;
-    /*position: relative;*/
     width: 100%;
-    /*float: right;*/
 }
 
 .content-block .player-list-block {
@@ -34,18 +32,6 @@
     border-bottom: solid;
     padding: 10px;
     text-align: left;
-}
-
-.player-list-block .player-name {
-
-}
-
-.player-list-block .player-status {
-
-}
-
-.player-list-block .player-rating {
-
 }
 
 .player-name, .player-status, .player-rating, .player-play-button, .player-data {
