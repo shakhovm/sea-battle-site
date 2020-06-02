@@ -1,6 +1,5 @@
 import React from "react";
 import '../profile/profile.css';
-import { Route } from 'react-router-dom';
 import PlayerInforamtion from "../playerInformation";
 
 const playerFriendsNames = [];

@@ -1,10 +1,9 @@
 import React from "react";
 import './mainPage.css';
 
-
 export default class MainPage extends React.Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
     }
 
     render() {

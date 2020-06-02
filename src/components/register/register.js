@@ -3,6 +3,7 @@ import React from "react";
 import '../form/form.css';
 import CustomInput from "../cunstom-input";
 import Form from "../form";
+
 const mainElements = [
     {
         value: "username",
@@ -128,6 +129,9 @@ export default class Register extends React.Component {
                 additionalData: "Here should be some information",
                 image: "https://arcanashop.ru/avatar/00/27/35702059.jpeg"
             }};
+
+        // this.props.addUsers(newUser);
+        console.log(this.props.playerList);
         fetch('/Users', {
             method: 'POST',
             headers: {
